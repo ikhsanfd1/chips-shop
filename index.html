@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chips Shop</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Chips<span>Shop</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+
+      <!-- Shopping Cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/menu/k_balado.jpeg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Kripik Balado</h3>
+            <div class="item-price">IDR 12K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/menu/k_pisang.jpeg" alt="Product 2" />
+          <div class="item-detail">
+            <h3>Kripik Pisang</h3>
+            <div class="item-price">IDR 12K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/menu/k_bawang.jpeg" alt="Product 3" />
+          <div class="item-detail">
+            <h3>Kripik Bawang</h3>
+            <div class="item-price">IDR 12K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/menu/k_keju.jpeg" alt="Product 4" />
+          <div class="item-detail">
+            <h3>Kripik Keju</h3>
+            <div class="item-price">IDR 12K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart end -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Nikmati Camilan <span>KripikOi</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
+          voluptatum.
+        </p>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih keripik kami?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum,
+            recusandae porro sunt reiciendis excepturi!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Accusantium doloribus laborum quasi nisi expedita sed eveniet eum
+            quas placeat quisquam.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Menu Section start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque minus
+        ullam placeat, necessitatibus dicta mollitia!
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="img/menu/k_balado.jpeg"
+            alt="Balado"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Keripik Balado -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/k_bawang.jpeg"
+            alt="Balado"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Keripik Bawang -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/k_keju.jpeg" alt="Balado" class="menu-card-img" />
+          <h3 class="menu-card-title">- Keripik Keju -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/k_koro.jpeg" alt="Balado" class="menu-card-img" />
+          <h3 class="menu-card-title">- Kacang Koro -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/k_pedes.jpeg" alt="Balado" class="menu-card-img" />
+          <h3 class="menu-card-title">- Keripik Pedas -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/k_pisang.jpeg"
+            alt="Balado"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Keripik Pisang -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end -->
+
+    <!-- Produk Section start -->
+    <section class="products" id="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        natus ullam perferendis cumque accusamus quod?
+      </p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/menu/k_balado.jpeg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Kripik Balado</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 12K <span>IDR 15K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/menu/k_pisang.jpeg" alt="Product 2" />
+          </div>
+          <div class="product-content">
+            <h3>Kripik Pisang</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 12K <span>IDR 15K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/menu/k_bawang.jpeg" alt="Product 3" />
+          </div>
+          <div class="product-content">
+            <h3>Kripik Bawang</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 12K <span>IDR 15K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/menu/k_keju.jpeg" alt="Product 4" />
+          </div>
+          <div class="product-content">
+            <h3>Kripik Keju</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 12K <span>IDR 15K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Produk Section end -->
+
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, sit!
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1983.535384574301!2d106.80456080131526!3d-6.121177204859678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smuara%20baru!5e0!3m2!1sid!2sid!4v1687271850393!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="Your Email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="No Handphone" />
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Ikhsan FD</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/k_balado.jpeg" alt="Produk 1" />
+          <div class="product-content">
+            <h3>Kripik Balado</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              similique in beatae pariatur architecto quas nihil provident
+              optio, aspernatur debitis. Voluptatum amet aliquid perferendis
+              excepturi.
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 12K <span>IDR 15K</span></div>
+              <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
